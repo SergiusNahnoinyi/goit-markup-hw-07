@@ -53,7 +53,7 @@ ul {
 }
 
 /* Стилизация модального окна */
-.backdrop.is-hidden {
+.backdrop.backdrop--hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -73,10 +73,10 @@ ul {
     visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden .modal {
+.backdrop.backdrop--hidden.modal {
   transform: translate(-50%, -50%) scale(0.8);
 }
-
+/* Стилизация обертки, которая используется для позиционированния в ней формы, чтобы не исп. миксы  */
 .modal {
   position: absolute;
   left: 50%;
@@ -93,11 +93,6 @@ ul {
 }
 
 .btn-modal-close {
-  position: fixed;
-  top: 8px;
-  right: 8px;
-  display: flex;
-  align-items: center;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -105,17 +100,25 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
+/* Внешняя геометрия по БЭМ для блока задается через родительский */
+.modal__btn-modal-close {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+}
 
-.close-icon {
+.btn-modal-close__icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-modal-close:hover .close-icon,
-.btn-modal-close:focus .close-icon {
+.btn-modal-close:hover .btn-modal-close__icon,
+.btn-modal-close:focus .btn-modal-close__icon {
   fill: var(--accent-color);
 }
 
-.form-title {
+.enquiry-form__title {
   display: block;
   font-weight: bold;
   font-size: 20px;
@@ -124,32 +127,29 @@ ul {
   margin-bottom: 12px;
 }
 
-.form-field {
+.enquiry-form__content {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.comment {
-  margin-bottom: 20px;
+.enquiry-form__content:nth-of-type(4n) {
+  margin-bottom: 23px;
 }
 
-.input-icon {
-  position: absolute;
-  top: 29px;
-  left: 12px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.enquiry-form__content:last-of-type {
+  margin-bottom: 30px;
 }
 
-.form-label {
-  margin-bottom: 4px;
+.enquiry-form__label {
+  margin-bottom: 5px;
   font-size: 12px;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
 }
 
-.form-input {
+.enquiry-form__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
@@ -160,19 +160,26 @@ ul {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:hover,
-.form-input:focus {
+.enquiry-form__icon {
+  position: absolute;
+  top: 29px;
+  left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.enquiry-form__input:hover,
+.enquiry-form__input:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.form-input:hover + .input-icon,
-.form-input:focus + .input-icon {
+.enquiry-form__input:hover + .enquiry-form__icon,
+.enquiry-form__input:focus + .enquiry-form__icon {
   fill: var(--accent-color);
 }
 
-.form-textarea {
+.enquiry-form__textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -183,46 +190,21 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-textarea:hover,
-.form-textarea:focus {
+.enquiry-form__textarea:hover,
+.enquiry-form__textarea:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.agreement-field {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.agreement-input {
+.enquiry-form__input--hidden {
   -webkit-appearance: none;
-  -moz-appearance: none; /* Вендорный префикс для Mozzila */
+  -moz-appearance: none;
   appearance: none;
   position: absolute;
 }
 
-.agreement-label::before {
-  content: '';
-  display: inline-block;
-  margin-right: 7px;
-  width: 16px;
-  height: 15px;
-  border: 2px solid black;
-  border-radius: 4px;
-}
-
-.agreement-input:checked ~ .agreement-label::before {
-  background-color: #2196f3;
-  border-color: #2196f3;
-  background-origin: border-box; /* Распространяет цвет и на бордер */
-}
-
-.agreement-input:checked ~ .agreement-label .agreement-icon {
-  transform: translateY(-15px);
-}
-
-.agreement-label {
+.enquiry-form__label--bigger-text {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -232,23 +214,42 @@ ul {
   color: var(--secondary-text-color);
 }
 
-.agreement-icon {
-  position: absolute;
-  top: 19px;
-  left: 12px;
-}
-
-.agreement-link {
+.enquiry-form__link {
   text-decoration: none;
   text-decoration-line: underline;
   color: var(--accent-color);
   margin-left: 3px;
 }
 
+.enquiry-form__icon--checked {
+  position: absolute;
+  top: 19px;
+  left: 12px;
+}
+
+.enquiry-form__label--bigger-text::before {
+  content: '';
+  display: inline-block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.enquiry-form__input--hidden:checked ~ .enquiry-form__label--bigger-text::before {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  background-origin: border-box; /* Распространяет цвет и на бордер */
+}
+
+.enquiry-form__input--hidden:checked
+  ~ .enquiry-form__label--bigger-text
+  .enquiry-form__icon--checked {
+  transform: translateY(-15px);
+}
+
 .send-button {
-  display: block;
-  margin: auto;
-  padding: 10px 55px;
   border: none;
   border-radius: 4px;
   font-weight: bold;
@@ -259,6 +260,12 @@ ul {
   color: var(--hero-text-color);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Внешняя геометрия по БЭМ для блока задается через родительский, хотя это уже, как по мне, диагноз - БЭМ головного мозга) */
+.enquiry-form__send-button {
+  display: block;
+  margin: auto;
+  padding: 10px 55px;
 }
 
 .send-button:hover,
