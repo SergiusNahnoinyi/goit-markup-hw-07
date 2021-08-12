@@ -436,25 +436,22 @@ ul {
   color: var(--accent-color);
   background-color: var(--hero-text-color);
 }
+
 /* Стилизация секции "Особенности" */
-.section {
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.section-services {
-  padding-top: 0px;
 }
 
 .features-list {
   display: flex;
 }
-/* Задает отступ и очищает крайнюю геометрию */
-.features-list-item:not(:last-child) {
+
+.features-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.thumb {
+.features-list__thumb {
   display: flex;
   justify-content: center;
   background-color: #f5f4fa;
@@ -463,12 +460,12 @@ ul {
   margin-bottom: 30px;
 }
 
-.features-title {
+.features-list__title {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
-.features-text {
+.features-list__text {
   line-height: 1.7;
   color: var(--secondary-text-color);
 }
