@@ -274,7 +274,7 @@ ul {
 }
 
 /* Стилизация Header */
-.header {
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -286,7 +286,7 @@ ul {
   margin-left: auto;
 }
 
-.header__container {
+.page-header__container {
   display: flex;
   align-items: center;
 }
@@ -306,7 +306,7 @@ ul {
 }
 
 /* Стилизация Site-nav*/
-.header__site-nav {
+.page-header__site-nav {
   margin-left: 93px;
 }
 
@@ -349,7 +349,7 @@ ul {
 }
 
 /* Стилизация Site-contacts */
-.header__contacts-list {
+.page-header__contacts-list {
   display: flex;
   margin-left: auto;
 }
@@ -390,8 +390,6 @@ ul {
 .hero {
   max-width: 1600px;
   height: 600px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -402,7 +400,12 @@ ul {
   background-position: center;
 }
 
-.hero-title {
+.page-main__hero {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__title {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -411,8 +414,8 @@ ul {
   text-transform: uppercase;
   color: var(--hero-text-color);
 }
-
-.button-primary {
+/* Миксовать не нужно, внешней геометрии нет - можна вставить без влияния на другие блоки */
+.btn-primary {
   padding: 10px 32px;
   border: transparent;
   border-radius: 4px;
@@ -428,8 +431,8 @@ ul {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-primary:hover,
-.button-primary:focus {
+.btn-primary:hover,
+.btn-primary:focus {
   color: var(--accent-color);
   background-color: var(--hero-text-color);
 }
@@ -613,18 +616,18 @@ ul {
 }
 
 /* Стилизация Footer */
-.footer {
+.page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-background-color);
 }
 
-.container-footer {
+.page-footer__container {
   display: flex;
   align-items: baseline;
 }
 
-.footer__company-name {
+.page-footer__company-name {
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
