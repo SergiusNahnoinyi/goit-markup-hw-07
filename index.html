@@ -67,27 +67,27 @@
     </div>
     <!-- Разметка Header -->
     <header class="header">
-        <div class="container  container-flex">
-            <a href="./index.html" class="company-name"><span class="company-name-accent">Web</span>Studio</a>
-            <nav class="site-nav">
-                <ul class="nav-list">
-                    <li class="nav-list-item"><a href="./index.html" class="nav-link current">Студия</a></li>
-                    <li class="nav-list-item"><a href="./portfolio.html" class="nav-link portfolio">Портфолио</a></li>
-                    <li class="nav-list-item"><a href="" class="nav-link contacts">Контакты</a></li>
+        <div class="container  header__container">
+            <a href="./index.html" class="company-name"><span class="company-name__text">Web</span>Studio</a>
+            <nav class="site-nav header__site-nav">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link--current">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="#contacts" class="site-nav__link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="contacts-list">
-                <li class="contacts-list-item" aria-label="Написать на почту">
-                    <a href="mailto:info@devstudio.com" class="contacts-link mail">
-                        <svg class="contacts-icon" width="16" height="12">
+            <ul class="contacts-list header__contacts-list">
+                <li class="contacts-list__item" aria-label="Написать на почту">
+                    <a href="mailto:info@devstudio.com" class="contacts-list__link">
+                        <svg class="contacts-list__icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope">
                             </use>
                         </svg>
                     info@devstudio.com
                     </a>
                 </li>
-                <li class="contacts-list-item" aria-label="Позвонить по телефону"><a href="tel:+380961111111" class="contacts-link tel">
-                        <svg class="contacts-icon" width="10" height="16">
+                <li class="contacts-list__item" aria-label="Позвонить по телефону"><a href="tel:+380961111111" class="contacts-list__link">
+                        <svg class="contacts-list__icon" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone">
                             </use>
                         </svg>
@@ -416,15 +416,15 @@
         </section>
     </main>
     <!-- Разметка Footer -->
-    <footer class="section-footer">
+    <footer class="footer">
         <div class="container container-footer">
             <div class="container-footer-adress">
-                <a href="./index.html" class="footer-company-name"><span class="company-name-accent">Web</span>Studio</a>
+                <a href="./index.html" class="company-name footer__company-name"><span class="company-name__text">Web</span>Studio</a>
                 <address class="company-adress">
-                    <ul>
+                    <ul id="contacts">
                         <li>г. Киев, пр-т Леси Украинки, 26</li>
-                        <li><a href="mailto:info@devstudio.com" class="company-link mail">info@devstudio.com</a></li>
-                        <li><a href="tel:+380961111111" class="company-link tel">+38 096 111 11 11</a></li>
+                        <li><a href="mailto:info@devstudio.com" class="company-link mail" aria-label="Написать на почту">info@devstudio.com</a></li>
+                        <li><a href="tel:+380961111111" class="company-link tel" aria-label="Позвонить по телефону">+38 096 111 11 11</a></li>
                     </ul> 
                 </address>
             </div>

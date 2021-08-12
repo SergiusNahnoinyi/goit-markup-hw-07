@@ -240,7 +240,7 @@ ul {
 .enquiry-form__input--hidden:checked ~ .enquiry-form__label--bigger-text::before {
   background-color: #2196f3;
   border-color: #2196f3;
-  background-origin: border-box; /* Распространяет цвет и на бордер */
+  background-origin: border-box;
 }
 
 .enquiry-form__input--hidden:checked
@@ -286,7 +286,7 @@ ul {
   margin-left: auto;
 }
 
-.container-flex {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -300,24 +300,26 @@ ul {
   text-decoration: none;
 }
 
-.company-name-accent {
+.company-name__text {
   color: var(--accent-color);
-  display: inline-block; /* Убирает маленький зазор по высоте у span */
+  display: inline-block;
 }
+
 /* Стилизация Site-nav*/
-.site-nav {
+.header__site-nav {
   margin-left: 93px;
 }
 
-.nav-list {
+.site-nav__list {
   display: flex;
 }
-/* Задает отступ и очищает крайнюю геометрию */
-.nav-list-item:not(:last-child) {
+
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-link {
+.site-nav__link,
+.site-nav__link--current {
   display: block;
   position: relative;
   padding-top: 32px;
@@ -329,13 +331,13 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover,
-.nav-link:focus,
+.site-nav__link:hover,
+.site-nav__link:focus,
 .current {
   color: var(--accent-color);
 }
 
-.nav-link.current::after {
+.site-nav__link--current::after {
   content: '';
   display: block;
   position: absolute;
@@ -347,22 +349,22 @@ ul {
 }
 
 /* Стилизация Site-contacts */
-.contacts-list {
+.header__contacts-list {
   display: flex;
   margin-left: auto;
 }
-/* Задает отступ через соседа */
-.contacts-list-item + li {
+
+.contacts-list__item:last-child {
   margin-left: 50px;
 }
 
-.contacts-icon {
+.contacts-list__icon {
   margin-right: 10px;
   fill: #757575;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-link {
+.contacts-list__link {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -374,13 +376,13 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts-list__link:hover,
+.contacts-list__link:focus {
   color: var(--accent-color);
 }
 
-.contacts-link:hover .contacts-icon,
-.contacts-link:focus .contacts-icon {
+.contacts-list__link:hover .contacts-list__icon,
+.contacts-list__link:focus .contacts-list__icon {
   fill: var(--accent-color);
 }
 
@@ -611,7 +613,7 @@ ul {
 }
 
 /* Стилизация Footer */
-.section-footer {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-background-color);
@@ -622,7 +624,7 @@ ul {
   align-items: baseline;
 }
 
-.footer-company-name {
+.footer__company-name {
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
