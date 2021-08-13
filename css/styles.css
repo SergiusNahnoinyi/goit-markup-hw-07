@@ -278,6 +278,11 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
+/* Стилизация Header второй страницы */
+.page-header--theme-shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -720,10 +725,6 @@ ul {
 }
 
 /* Стилизация секции "Портфолио работ" */
-.header {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .container-button {
   display: flex;
   flex-direction: column;
