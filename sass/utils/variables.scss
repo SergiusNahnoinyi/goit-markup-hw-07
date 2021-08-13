@@ -1,0 +1,37 @@
+/* Опеределяем палитру цветов макета */
+/* Основной цвет шрифта: #212121 */
+/* Вторичный цвет шрифта: #FFFFFF */
+/* Третий цвет шрифта: #757575 */
+/* Акцент шрифта: #2196F3 */
+
+/* Опеределяем палитру цветов фона */
+/* Основной цвет фона: #FFFFFF */
+/* Вторичный цвет фона: #2F303A */
+/* Третий цвет фона: #F5F4FA */
+
+/* Опеределяем шрифт */
+/* Основной шрифт: Roboto */
+/* Вторичный шрифт: Raleway */
+
+/* Шрифт */
+$primary-text: 'Roboto';
+$secondary-text: 'Raleway';
+$reserve-text: sans-serif;
+
+/* Свойства шрифта */
+$primary-font-size: 14px;
+$primary-line-height: 1.2;
+$primary-letter-spacing: 0.03em;
+
+/* Цвет шрифта */
+$primary-text-color: #212121;
+$hero-text-color: #fff;
+$secondary-text-color: #757575;
+
+/* Цвет фона */
+$accent-color: #2196f3;
+$primary-background-color: #fff;
+$secondary-background-color: #2f303a;
+
+/* Зазор карточёк продуктов */
+$portfolio-card-gap: 30px;
