@@ -740,10 +740,13 @@ ul {
 .button-list {
   display: flex;
   justify-content: center;
+}
+
+.section__button-list {
   margin-bottom: 50px;
 }
 
-.button-list-item:not(:last-child) {
+.button-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -772,14 +775,14 @@ ul {
   border-radius: 4px;
 }
 
-.portfolio-list {
+.portfolio-grid {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--portfolio-card-gap));
   margin-top: calc(-1 * var(--portfolio-card-gap)); /* Так запишется -30рх */
 }
 
-.portfolio-list-item {
+.portfolio-grid__item {
   flex-basis: calc(100% / 3 - var(--portfolio-card-gap));
   margin-left: var(--portfolio-card-gap);
   margin-top: var(--portfolio-card-gap);
@@ -797,12 +800,12 @@ ul {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-overlay {
+.project-link__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.project-overlay-description {
+.project-link__description {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -816,17 +819,17 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link:hover .project-overlay-description,
-.project-link:focus .project-overlay-description {
+.project-link:hover .project-link__description,
+.project-link:focus .project-link__description {
   transform: translateY(0%);
 }
 
-.cards-container {
+.project-link__meta {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 
-.project-title {
+.project-link__name {
   margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
@@ -835,7 +838,7 @@ ul {
   letter-spacing: 0.06em;
 }
 
-.project-description {
+.project-link__type {
   font-size: 16px;
   line-height: 1.9;
   color: var(--secondary-text-color);
