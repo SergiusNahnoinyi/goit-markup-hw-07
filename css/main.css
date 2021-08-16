@@ -1,1 +1,47 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+/* Опеределяем палитру цветов макета */
+/* Основной цвет шрифта: #212121 */
+/* Вторичный цвет шрифта: #FFFFFF */
+/* Третий цвет шрифта: #757575 */
+/* Акцент шрифта: #2196F3 */
+/* Опеределяем палитру цветов фона */
+/* Основной цвет фона: #FFFFFF */
+/* Вторичный цвет фона: #2F303A */
+/* Третий цвет фона: #F5F4FA */
+/* Опеределяем шрифт */
+/* Основной шрифт: Roboto */
+/* Вторичный шрифт: Raleway */
+/* Шрифт */
+/* Свойства шрифта */
+/* Цвет шрифта */
+/* Цвет фона */
+/* Зазор карточёк продуктов */
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+/*# sourceMappingURL=main.css.map */
