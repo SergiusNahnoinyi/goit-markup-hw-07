@@ -311,4 +311,18 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.company-name {
+  display: block;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 26px;
+  color: #212121;
+  text-decoration: none;
+}
+
+.company-name__text {
+  display: inline-block;
+  color: #2196f3;
+}
 /*# sourceMappingURL=main.css.map */
