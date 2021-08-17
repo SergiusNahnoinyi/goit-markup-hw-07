@@ -266,4 +266,29 @@ ul {
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
 }
+
+.send-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  padding: 10px 55px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-button .send-button:hover,
+.send-button .send-button:focus {
+  background-color: #188ce8;
+}
+
+.enquiry-form__send-button {
+  display: block;
+  margin: auto;
+}
 /*# sourceMappingURL=main.css.map */
