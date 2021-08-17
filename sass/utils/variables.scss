@@ -29,9 +29,15 @@ $hero-text-color: #fff;
 $secondary-text-color: #757575;
 
 /* Цвет фона */
-$accent-color: #2196f3;
-$primary-background-color: #fff;
-$secondary-background-color: #2f303a;
+$colors: (
+  'primary': #fff,
+  'accent': #2196f3,
+  'secondary': #2f303a,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
 
 /* Зазор карточёк продуктов */
 $portfolio-card-gap: 30px;

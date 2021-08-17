@@ -4,5 +4,5 @@ body {
   line-height: $primary-line-height;
   letter-spacing: $primary-letter-spacing;
   color: $primary-text-color;
-  background-color: $primary-background-color;
+  background-color: getColor('primary');
 }
