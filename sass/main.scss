@@ -1,3 +1,7 @@
-@import "utils/variables";
-@import "base/body";
-@import "base/reset";
+@import 'utils/variables';
+@import 'base/body';
+@import 'base/reset';
+@import 'utils/placeholders';
+@import 'components/modal/backdrop';
+@import 'components/modal/modal';
+@import 'components/modal/enquiry-form';
