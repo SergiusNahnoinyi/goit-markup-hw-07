@@ -338,7 +338,7 @@ ul {
 
 .site-nav__link:hover,
 .site-nav__link:focus,
-.current {
+.site-nav__link--current {
   color: var(--accent-color);
 }
 
