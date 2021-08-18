@@ -2,13 +2,19 @@
 @import 'base/body';
 @import 'base/reset';
 @import 'utils/placeholders';
+
 @import 'components/modal/backdrop';
 @import 'components/modal/modal';
 @import 'components/modal/enquiry-form';
 @import 'components/modal/send-button';
+
 @import 'components/header/page-header';
 @import 'components/header/company-name';
 @import 'components/header/site-nav';
 @import 'components/header/contacts';
+
 @import 'components/hero/hero';
+
 @import 'components/features/features';
+
+@import 'components/team/team';
