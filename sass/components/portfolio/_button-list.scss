@@ -1,3 +1,7 @@
+.section {
+  @extend %section;
+}
+
 .container-button {
   display: flex;
   flex-direction: column;
