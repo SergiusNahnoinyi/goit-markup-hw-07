@@ -107,7 +107,7 @@
 .enquiry-form__link {
   text-decoration: none;
   text-decoration-line: underline;
-  color: var(--accent-color);
+  color: getColor('accent');
   margin-left: 3px;
 }
 
