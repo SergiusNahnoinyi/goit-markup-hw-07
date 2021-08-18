@@ -1,4 +1,11 @@
 @import 'utils/variables';
 @import 'base/body';
 @import 'base/reset';
+
+@import 'components/header/page-header-shadowed';
+@import 'components/header/company-name';
+@import 'components/header/site-nav';
 @import 'utils/placeholders';
+@import 'components/header/contacts';
+
+@import 'components/portfolio/button-list';

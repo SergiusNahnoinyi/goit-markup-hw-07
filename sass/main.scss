@@ -1,7 +1,6 @@
 @import 'utils/variables';
 @import 'base/body';
 @import 'base/reset';
-@import 'utils/placeholders';
 
 @import 'components/modal/backdrop';
 @import 'components/modal/modal';
@@ -11,6 +10,7 @@
 @import 'components/header/page-header';
 @import 'components/header/company-name';
 @import 'components/header/site-nav';
+@import 'utils/placeholders';
 @import 'components/header/contacts';
 
 @import 'components/hero/hero';
