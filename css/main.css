@@ -680,4 +680,23 @@ ul {
 .page-footer__thumb:not(:last-of-type) {
   margin-right: 70px;
 }
+
+.page-footer__title {
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.social-list--wider {
+  width: 206px;
+}
+
+.social-list__link--gray-background {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.page-footer__thumb {
+  margin-right: auto;
+}
 /*# sourceMappingURL=main.css.map */
