@@ -2,6 +2,10 @@
   @extend %section;
 }
 
+.section__title--hidden {
+  @extend %section__title--hidden;
+}
+
 .container-button {
   display: flex;
   flex-direction: column;

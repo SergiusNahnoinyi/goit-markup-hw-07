@@ -172,6 +172,10 @@ ul {
   padding-bottom: 94px;
 }
 
+.section__title--hidden {
+  visibility: hidden;
+}
+
 .container-button {
   display: -webkit-box;
   display: -ms-flexbox;
