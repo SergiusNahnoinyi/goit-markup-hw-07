@@ -250,7 +250,7 @@ ul {
   color: #757575;
 }
 
-.page-main__section {
+.section--no-top-padding {
   padding-top: 0;
   padding-bottom: 94px;
 }
