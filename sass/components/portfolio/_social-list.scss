@@ -7,11 +7,11 @@
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.social-list--wider {
-  width: 206px;
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-list__link {

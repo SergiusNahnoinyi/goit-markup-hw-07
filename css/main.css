@@ -45,6 +45,25 @@ ul {
   list-style: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -212,11 +231,6 @@ ul {
   background-color: #fff;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .features-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,12 +267,6 @@ ul {
 .section--no-top-padding {
   padding-top: 0;
   padding-bottom: 94px;
-}
-
-.section__title {
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 36px;
 }
 
 .services-list {
@@ -338,9 +346,13 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-list__link {
@@ -384,15 +396,15 @@ ul {
   border: 1px solid #2196f3;
 }
 
-.clients-list__link:hover .clients-list__icon,
-.clients-list__link:focus .clients-list__icon {
-  fill: #2196f3;
-}
-
 .clients-list__icon {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-list__link:hover .clients-list__icon,
+.clients-list__link:focus .clients-list__icon {
+  fill: #2196f3;
 }
 
 .page-footer {
@@ -466,10 +478,6 @@ ul {
   font-size: 16px;
   text-transform: uppercase;
   color: #fff;
-}
-
-.social-list--wider {
-  width: 206px;
 }
 
 .social-list__link--gray-background {
