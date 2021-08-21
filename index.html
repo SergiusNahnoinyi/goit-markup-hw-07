@@ -11,60 +11,6 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <!-- Разметка модального окна -->
-    <div class="backdrop backdrop--hidden" data-modal>
-        <div class="modal">
-            <button class="btn-modal-close modal__btn-modal-close" data-modal-close>
-                <svg class="btn-modal-close__icon" width="18" height="18">
-                    <use href="./images/icons.svg#icon-close">
-                    </use>
-                </svg>
-            </button>
-            <form class="enquiry-form" name="enquiry_form" autocomplete="off" novalidate>
-                <b class="enquiry-form__title">Оставьте свои данные, мы вам перезвоним</b>
-                <div class="enquiry-form__content">
-                    <label class="enquiry-form__label" for="user-name">Имя</label>
-                    <input class="enquiry-form__input" type="text" name="user_name"  id="user-name" />
-                    <svg class="enquiry-form__icon" width="18" height="18">
-                        <use href="./images/icons.svg#icon-person">
-                        </use>
-                    </svg>
-                </div>
-                <div class="enquiry-form__content">
-                    <label class="enquiry-form__label" for="user-phone">Телефон</label>
-                    <input class="enquiry-form__input" type="tel" name="user_phone"  id="user-phone" />
-                    <svg class="enquiry-form__icon" width="18" height="18">
-                        <use href="./images/icons.svg#icon-phone-black">
-                        </use>
-                    </svg>
-                </div>
-                <div class="enquiry-form__content">
-                    <label class="enquiry-form__label" for="user-mail">Почта</label>
-                    <input class="enquiry-form__input" type="email" name="user_mail" id="user-mail" />
-                    <svg class="enquiry-form__icon" width="18" height="18">
-                        <use href="./images/icons.svg#icon-email-black">
-                        </use>
-                    </svg>
-                </div>  
-                <div class="enquiry-form__content">
-                    <label class="enquiry-form__label" for="user-comment">Комментарий</label>
-                        <textarea class="enquiry-form__textarea" name="сomments" rows="7" placeholder="Введите текст" id="user-comment"></textarea>
-                </div>
-                <div class="enquiry-form__content">
-                        <input class="enquiry-form__input--hidden" type="checkbox" name="user_agreement" value="1" id="user-agreement"/>
-                        <label class="enquiry-form__label--bigger-text" for="user-agreement">Соглашаюсь с рассылкой и принимаю 
-                            <a href="" class="enquiry-form__link">Условия договора</a> 
-                        <svg class="enquiry-form__icon--checked" width="16" height="15">
-                            <use href="./images/icons.svg#icon-check">
-                            </use>
-                        </svg>
-                        </label>
-                </div>
-                <button class="send-button enquiry-form__send-button" type="submit">Отправить
-                </button>
-            </form>
-        </div>
-    </div>
     <!-- Разметка Header -->
     <header class="page-header">
         <div class="container  page-header__container">
@@ -483,6 +429,62 @@
             </form>
         </div>
     </footer>
+    <!-- Разметка модального окна -->
+    <div class="backdrop backdrop--hidden" data-modal>
+        <div class="modal">
+            <button class="btn-modal-close modal__btn-modal-close" data-modal-close>
+                <svg class="btn-modal-close__icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-close">
+                    </use>
+                </svg>
+            </button>
+            <form class="enquiry-form" name="enquiry_form" autocomplete="off" novalidate>
+                <b class="enquiry-form__title">Оставьте свои данные, мы вам перезвоним</b>
+                <div class="enquiry-form__content">
+                    <label class="enquiry-form__label" for="user-name">Имя</label>
+                    <input class="enquiry-form__input" type="text" name="user_name" id="user-name" />
+                    <svg class="enquiry-form__icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-person">
+                        </use>
+                    </svg>
+                </div>
+                <div class="enquiry-form__content">
+                    <label class="enquiry-form__label" for="user-phone">Телефон</label>
+                    <input class="enquiry-form__input" type="tel" name="user_phone" id="user-phone" />
+                    <svg class="enquiry-form__icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-phone-black">
+                        </use>
+                    </svg>
+                </div>
+                <div class="enquiry-form__content">
+                    <label class="enquiry-form__label" for="user-mail">Почта</label>
+                    <input class="enquiry-form__input" type="email" name="user_mail" id="user-mail" />
+                    <svg class="enquiry-form__icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-email-black">
+                        </use>
+                    </svg>
+                </div>
+                <div class="enquiry-form__content">
+                    <label class="enquiry-form__label" for="user-comment">Комментарий</label>
+                    <textarea class="enquiry-form__textarea" name="сomments" rows="7" placeholder="Введите текст"
+                        id="user-comment"></textarea>
+                </div>
+                <div class="enquiry-form__content">
+                    <input class="enquiry-form__input--hidden" type="checkbox" name="user_agreement" value="1"
+                        id="user-agreement" />
+                    <label class="enquiry-form__label--bigger-text" for="user-agreement">Соглашаюсь с рассылкой и принимаю
+                        <a href="" class="enquiry-form__link">Условия договора</a>
+                        <svg class="enquiry-form__icon--checked" width="16" height="15">
+                            <use href="./images/icons.svg#icon-check">
+                            </use>
+                        </svg>
+                    </label>
+                </div>
+                <button class="send-button enquiry-form__send-button" type="submit">Отправить
+                </button>
+            </form>
+        </div>
+    </div>
     <!-- Подключение скрипта modal.js -->
     <script src="./js/modal.js"></script>
 </body>

@@ -2,10 +2,6 @@
 @import 'base/body';
 @import 'base/reset';
 
-@import 'components/modal/modal';
-@import 'components/modal/enquiry-form';
-@import 'components/modal/send-button';
-
 @import 'components/header/page-header';
 @import 'components/header/company-name';
 @import 'components/header/site-nav';
@@ -27,4 +23,7 @@
 @import 'components/footer/social-list';
 @import 'components/footer/signup-form';
 
-@import 'components/backdrop/backdrop';
+@import 'components/modal/backdrop';
+@import 'components/modal/modal';
+@import 'components/modal/enquiry-form';
+@import 'components/modal/send-button';
